@@ -16,7 +16,7 @@
 |   1 | Lê Đức Trúc Lâm | 2A202603787 | 26ai.lamldt@vinuni.edu.vn | truclamld | Người viết code |
 |   2 | Phạm Lê Chuẩn                 |   2A202603784          | 26ai.chuanpl@vinuni.edu.vn                          | 22520160          | Người viết code                |
 |   3 | Ngô Chí Vĩnh    | 2A202603724 | 26ai.vinhnc2@vinuni.edu.vn | NgChiVinh | Người kiểm số; phụ trách Nhiệm vụ D |
-|   4 |                 |             |                           |           |                 |
+|   4 | Hoàng Dương Anh Quân | 2A202603735 | 26ai.quanhda@vinuniversity.edu.vn | HoangQuan23112004 | Người gắn nhãn 1 |
 |   5 | Phan Trung Hiếu | 2A202603763 | 26ai.hiept3@vinuni.edu.vn | TrungHieuPh | Người gắn nhãn 2 kiêm giữ hồ sơ; phụ trách Nhiệm vụ E |
 
 Bốn vai của lab:
@@ -118,3 +118,19 @@ Commit `db721d65aafa47245711595d6b2858f00e994c69` có thay đổi ở `src/lab13
 
 - Commit `2969d36` (nhãn người 2), `ca2af57` (E1 và event, PR #2); nhánh `nhiem-vu-E-Hieu-ho-so` (E2, hồ sơ, báo cáo nhóm).
 - Báo cáo cá nhân: `report/team/2A202603763_PhanTrungHieu.md`.
+
+## Hoàng Dương Anh Quân — 2A202603735
+
+### Phần việc phụ trách
+
+- Nhiệm vụ C (CP3), vai trò người gắn nhãn 1 cho bộ 20 ca lỗi của trợ lý hoàn phí.
+
+### Đóng góp cụ thể
+
+- Đối chiếu nhãn lần 1 với bộ nhãn của Hiếu, ghi nhận 19/20 ca trùng (95%) theo bộ nhãn gốc của Hiếu và giải thích nhãn thống nhất cho ca 8.
+- Đề xuất cách phát hiện, biện pháp khắc phục và vai trò phụ trách cho 5 ca đại diện thuộc 5 loại lỗi.
+
+### Bằng chứng
+
+- [Bảng đối chiếu và biện pháp khắc phục](report/team/bang_loi.md)
+- [Báo cáo cá nhân](report/team/2A202603735_HoangDuongAnhQuan.md)
