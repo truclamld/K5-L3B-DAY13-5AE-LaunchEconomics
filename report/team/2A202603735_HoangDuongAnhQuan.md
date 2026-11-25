@@ -2,10 +2,10 @@
 
 ## 1. Thông tin thành viên
 
-- Họ tên — Hoàng Dương Anh Quân
-- MSSV — 2A202603735
-- Email — 26ai.quanhda@vinuniversity.edu.vn
-- Vai trong nhóm — Người gắn nhãn 1
+- Họ tên: Hoàng Dương Anh Quân
+- MSSV: 2A202603735
+- Email: 26ai.quanhda@vinuniversity.edu.vn
+- Vai trong nhóm: Người gắn nhãn 1, phụ trách Nhiệm vụ C
 
 ## 2. Phần việc phụ trách
 
@@ -28,4 +28,6 @@ Codex hỗ trợ đọc đề, đối chiếu bảng và soạn báo cáo. Phầ
 
 ## 6. Tự đánh giá
 
-Qua ca 8, em hiểu rõ hơn cách phân biệt lỗi hệ thống do viện dẫn sai chính sách với lỗi ngữ cảnh do giả định của trợ lý không phù hợp với khách. Lần sau, em sẽ ghi lý do ngay khi gắn nhãn cho các ca dễ nhầm và so bảng với bộ nhãn gốc trước khi tính tỉ lệ đồng thuận.
+- **Làm tốt** — Hoàn thành bảng đối chiếu 20 ca, giải thích nhãn thống nhất cho ca 8 và đề xuất biện pháp khắc phục cho đủ năm loại lỗi.
+- **Còn hạn chế** — Hai nhãn của Hiếu ở ca 13 và 15 bị chép sai khi gộp bảng. Sau khi đối chiếu với bộ nhãn gốc, kết quả được sửa thành 19/20 ca trùng (95%).
+- **Cần cải thiện** — Kiểm tra từng dòng với hai bộ nhãn gốc trước khi tính tỉ lệ đồng thuận và ghi lý do ngay khi gắn nhãn các ca dễ nhầm.
