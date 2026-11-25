@@ -7,7 +7,7 @@
 - Repo nhóm: `K5-L3B-DAY13-5AE-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
 - URL repo: https://github.com/truclamld/K5-L3B-DAY13-5AE-LaunchEconomics
 - Nhánh nộp: `main`
-- Commit chốt: 
+- Commit chốt: `589dab7ce7852beb10590f441a2fd8506cbe49bc`
 
 ## Thành viên
 
