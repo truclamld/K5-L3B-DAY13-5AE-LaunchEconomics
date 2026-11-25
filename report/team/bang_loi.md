@@ -20,27 +20,27 @@ Người gắn nhãn 1: Quân · Người gắn nhãn 2: Hiếu (gắn trong 8 p
 | 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Ngầm | Có | Ngầm |
-| 13 | Giới hạn hệ thống | Hệ thống | Không | Giới hạn hệ thống |
+| 13 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 14 | Do người dùng | Do người dùng | Có | Do người dùng |
-| 15 | Hệ thống | Giới hạn hệ thống | Không | Hệ thống |
+| 15 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 17 | Ngầm | Ngầm | Có | Ngầm |
 | 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận ban đầu:** 17/20 × 100% = **85%**.
+**Tỉ lệ đồng thuận ban đầu:** 19/20 × 100% = **95%**. Hai bộ nhãn độc lập: người 2 commit `2969d36` trước khi so; chỉ lệch ca 8.
 
 ## Quy tắc phân biệt cho các ca không trùng
 
-Nhãn thống nhất cho ba ca dưới đây dựa trên nguyên nhân gốc và [hướng dẫn Nhiệm vụ C](../../docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md#nhãn-tham-khảo-cho-20-ca).
+Nhãn thống nhất cho ca không trùng dựa trên nguyên nhân gốc.
 
-- **Ca 8 — Hệ thống.** Trợ lý viện dẫn điều khoản không tồn tại trong chính sách hiện hành, dù số tiền hoàn đúng.
-- **Ca 13 — Giới hạn hệ thống.** Hoàn phí bảo hiểm nằm ngoài phạm vi trợ lý, và câu trả lời cần nói rõ giới hạn đó.
-- **Ca 15 — Hệ thống.** Trợ lý có đủ thông tin để áp dụng chính sách nhưng tính hoàn 100% trong khi đơn trễ 26 giờ chỉ được hoàn 50%.
+- **Ca 8 — Hệ thống.** Trợ lý viện dẫn điều khoản không tồn tại trong chính sách hiện hành, dù số tiền hoàn đúng. Quy tắc: nội dung sai so với tài liệu nguồn là Hệ thống; Ngữ cảnh chỉ dùng khi nội dung đúng nhưng không hợp hoàn cảnh hoặc kỳ vọng của người dùng.
 
 ### Lý do gắn nhãn đề xuất cho các ca dễ nhầm
 
+- Ca 13: Hoàn phí bảo hiểm nằm ngoài phạm vi trợ lý, và câu trả lời cần nói rõ giới hạn đó, nên xếp giới hạn hệ thống.
+- Ca 15: Trợ lý có đủ thông tin để áp dụng chính sách nhưng tính hoàn 100% trong khi đơn trễ 26 giờ chỉ được hoàn 50%, nên xếp lỗi hệ thống.
 - Ca 12: Kết quả hoàn tiền đúng nhưng chi phí tăng kéo dài mà không ai phát hiện, nên xếp lỗi ngầm.
 - Ca 17: Việc dùng bảng giá cũ gây nhiều khoản hoàn lệch mà khách và hệ thống đều không phát hiện, nên xếp lỗi ngầm.
 - Ca 18: Kết quả đúng nhưng thông báo thiếu căn cứ mà khách cần để hiểu số tiền, nên xếp lỗi ngữ cảnh.

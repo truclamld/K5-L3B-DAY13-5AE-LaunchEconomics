@@ -40,11 +40,28 @@ Cách tính: đếm trực tiếp trên `src/logix_requests.csv` theo đúng cô
 - An toàn (tự đề xuất): `audit_sample_checked`, so so_tien_da_hoan với so_tien_dung.
 - Chi phí mỗi việc thành công (A): `agent_run_completed` cho token và tool, `staff_review_decision` và `staff_rework_completed` cho phút đo thật thay cột `_simulated`.
 
+**Event cho bảng khắc phục** (`bang_loi.md`), thêm vào danh sách trên để mọi cách phát hiện đều đo được:
+
+| Event | Ai tạo | Thuộc tính chính | Thời điểm |
+| --- | --- | --- | --- |
+| refund_account_validation_failed | Form hoàn tiền | ngan_hang, truong_sai, trace_id | Khi số tài khoản sai định dạng (ca 1) |
+| refund_success_notified | Dịch vụ thông báo | kenh, noi_dung, trace_id | Khi gửi tin "đã hoàn" cho khách (ca 7) |
+| refund_destination_disputed | Hệ thống ticket | noi_nhan_mong_doi, noi_da_hoan, trace_id | Khi khách báo chưa nhận tiền (ca 3) |
+| refund_outside_retention_window | Agent | ngay_don, trace_id | Khi đơn cũ hơn 12 tháng (ca 19) |
+| refund_amount_mismatch | Đối soát tài chính | so_tien_da_hoan, so_tien_dung, trace_id | Khi đối soát hằng ngày thấy lệch (ca 5) |
+
+`ledger_refund_committed` trong `bang_loi.md` là `refund_ledger_write` có ket_qua = ok; `refund_handoff_created` là `handoff_to_staff`.
+
 ## E2 · Rủi ro kinh tế
 
 Ít nhất hai dòng, số lấy từ bảng độ nhạy (`bang_chi_phi.md`).
 
 | Rủi ro | Tác động đã tính | Dấu hiệu theo dõi | Hành động | Người phụ trách |
 | --- | --- | --- | --- | --- |
-| ... | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... |
+| Số ca làm lại tăng gấp đôi | +51,77%: từ 4.472 đ lên 6.787 đ mỗi việc thành công; làm lại đã chiếm 51,8% tổng chi phí [simulated] | `staff_rework_completed` chia `refund_request_created` theo tuần > 7% (đợt chạy thử: 4,89% trong phạm vi, riêng hang_nang 11,39%) | Thu hẹp về noi_dia; Kỹ sư trưởng agent rà 20 trace làm lại trong 3 ngày | PM trợ lý hoàn phí |
+| Phải xem lại 100% kéo dài | 11.743 đ mỗi việc thành công = 0,98× của 12.000 đ; 12.414 đ = 1,03× nếu làm lại 15,3 phút [simulated] | % yêu cầu nhóm trợ lý có `staff_review_decision` còn > 50% cuối bước 0.25 (đợt chạy thử: 13,03% trong phạm vi) | Giảm xem lại theo bậc khi tỉ lệ bỏ qua gợi ý < 15% (đợt chạy thử: 21,09% trong phạm vi) | Trưởng nhóm CSKH |
+| Khối lượng thấp hơn dự kiến | Cố định 40 triệu đ/tháng: 1.185 đ mỗi việc ở 45.000 yêu cầu/tháng, 2.370 đ nếu còn một nửa; tổng 4.599 đ lên 5.784 đ [simulated] | Việc thành công cộng dồn 4 tuần (`ticket_closed` không có `ticket_reopened`) < 16.875, tức 50% của 33.750 | Không mở rộng pilot; xem lại hợp đồng chi phí cố định | PM trợ lý hoàn phí |
+
+Giá token ít rủi ro: gấp đôi chỉ +5,62% (4.723 đ) [simulated], nên không cần dấu hiệu theo dõi riêng.
+
+Cách tính: tác động lấy từ B1, B4, A4 trong `bang_chi_phi.md`; tỉ lệ đợt chạy thử đếm trên `src/logix_requests.csv` (làm lại 48/982, riêng hang_nang 18/158; xem lại 128/982; bỏ qua gợi ý 27/128).
