@@ -17,7 +17,7 @@
 |   2 | Phạm Lê Chuẩn                 |   2A202603784          | 26ai.chuanpl@vinuni.edu.vn                          | 22520160          | Người viết code                |
 |   3 | Ngô Chí Vĩnh    | 2A202603724 | 26ai.vinhnc2@vinuni.edu.vn | NgChiVinh | Người kiểm số; phụ trách Nhiệm vụ D |
 |   4 |                 |             |                           |           |                 |
-|   5 |                 |             |                           |           |                 |
+|   5 | Phan Trung Hiếu | 2A202603763 | 26ai.hiept3@vinuni.edu.vn | TrungHieuPh | Người gắn nhãn 2 kiêm giữ hồ sơ; phụ trách Nhiệm vụ E |
 
 Bốn vai của lab:
 
@@ -98,3 +98,23 @@ Commit `db721d65aafa47245711595d6b2858f00e994c69` có thay đổi ở `src/lab13
 - `python lab13.py` chạy từ đầu đến cuối, in phần D1 ở cuối.
 - `pilot_plan.yaml` đọc được bằng `yaml.safe_load`, không còn `?` ngoài dòng chú thích.
 - Báo cáo cá nhân: `report/team/2A202603724_NgoChiVinh.md`.
+
+## PhanTrungHieu-2A202603763
+
+### Phần việc phụ trách
+
+- Người gắn nhãn 2 kiêm giữ hồ sơ: gắn nhãn 20 ca lỗi độc lập ở Nhiệm vụ C.
+- Nhiệm vụ E: `report/team/chi_so.md`, `report/team/ho_so_launch_v0.md`, tổng hợp `report/team/group_report.md`.
+
+### Đóng góp cụ thể
+
+- Bộ nhãn người 2 cho 20 ca; đồng thuận 19/20 = 95%, chỉ lệch ca 8. Sửa lại ca 13 và 15 bị chép sai khi gộp, theo commit gốc `2969d36`.
+- E1: chỉ số trong đợt chạy thử là chính 82,83% (994/1.200), bỏ qua gợi ý 27,12% (48/177), mở lại 7 ngày 4,25% (51/1.200); thêm một chỉ số dùng và một chỉ số an toàn tự đề xuất.
+- 15 event có `trace_id` và kiểm tra chéo từng chỉ số; E2 ba dòng rủi ro kinh tế lấy số từ bảng độ nhạy [simulated].
+- Hồ sơ launch v0 đủ bảy mục, nêu con số bất lợi; đề xuất Go có điều kiện với 6 điều kiện, mỗi điều kiện có người phụ trách và ngày kiểm tra.
+- Chạy lại `python lab13.py` trên máy khác trong nhóm: A1 in `ĐẠT`, số khớp `bang_chi_phi.md`; `pilot_plan.yaml` đọc được bằng `yaml.safe_load`.
+
+### Bằng chứng
+
+- Commit `2969d36` (nhãn người 2), `ca2af57` (E1 và event, PR #2); nhánh `nhiem-vu-E-Hieu-ho-so` (E2, hồ sơ, báo cáo nhóm).
+- Báo cáo cá nhân: `report/team/2A202603763_PhanTrungHieu.md`.
