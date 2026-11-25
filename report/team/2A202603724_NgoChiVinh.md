@@ -72,6 +72,19 @@
 
 ## 6. Tự đánh giá
 
-- **Làm tốt:** [tự điền]
-- **Còn hạn chế:** [tự điền; ví dụ chưa thử chia theo yêu cầu kết hợp phân tầng, ngày bắt đầu pilot là giả định]
-- **Điều học được:** khi chia theo cụm, số cụm quyết định cỡ mẫu hiệu dụng (trần c / ICC), không phải tổng số yêu cầu.
+- **Làm tốt:**
+  - Tính đủ năm câu D1 trước rồi mới chọn cách chia; năm số khớp đáp án (1.251 · 3.103 · 1.000 · 300 · 299).
+  - Ghi rõ con số bất lợi của cách chia đã chọn (power 0,64 nếu tác động thật chỉ 5 điểm) thay vì giấu đi.
+  - Tính tỉ lệ mở lại hiện tại (3,97% trong phạm vi) trước khi đặt luật an toàn, nên ngưỡng không làm pilot dừng ngay tuần đầu.
+  - Kiểm số phần A: sáu số tính tay khớp code của người viết code.
+  - Kiểm tra chéo luật dừng với nhãn ca 7, 20 trong `bang_loi.md` và danh sách event trong `chi_so.md`.
+  - Phần D vào `main` qua PR #4; gộp xung đột với phần B mà vẫn giữ code của cả hai người.
+- **Còn hạn chế:**
+  - Luật an toàn đo trên cả phạm vi (3,97%), chưa có luật riêng cho `hang_nang` dù loại này có tỉ lệ mở lại 8,23% (13/158), cao hơn trần 6%; hiện chỉ dựa vào điều kiện theo dõi riêng trong hồ sơ launch.
+  - Ngày bắt đầu (2026-12-07) và ngày quyết định (2027-01-12) dựa trên giả định 30,7 yêu cầu mỗi nhân viên mỗi ngày, chưa đối chiếu với lịch làm việc thật.
+  - Ngưỡng chi phí 8.000 đ và ngưỡng bỏ qua gợi ý 40% là lựa chọn của nhóm, đặt từ số simulated, chưa kiểm chứng bằng phút đo thật.
+  - Dựa nhiều vào Claude để viết code và soạn file; phải tự đọc lại từng bước tính để giải thích được trước hội đồng.
+- **Điều học được:**
+  - Khi chia theo cụm, số cụm quyết định cỡ mẫu hiệu dụng (trần c / ICC), không phải tổng số yêu cầu.
+  - Chọn cách chia là đánh đổi giữa tách được tác động và đủ cỡ mẫu.
+  - Luật dừng phải đặt sau khi nhìn số hiện tại, nếu không sẽ dừng nhầm ngay từ đầu.
