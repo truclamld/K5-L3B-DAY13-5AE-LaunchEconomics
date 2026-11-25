@@ -131,6 +131,5 @@ Commit `db721d65aafa47245711595d6b2858f00e994c69` có thay đổi ở `src/lab13
 - Đề xuất cách phát hiện, biện pháp khắc phục và vai trò phụ trách cho 5 ca đại diện thuộc 5 loại lỗi.
 
 ### Bằng chứng
-
-- [Bảng đối chiếu và biện pháp khắc phục](report/team/bang_loi.md)
-- [Báo cáo cá nhân](report/team/2A202603735_HoangDuongAnhQuan.md)
+- Commit `171a113` (bảng đối chiếu và biện pháp khắc phục trong `report/team/bang_loi.md`, PR #3), `a2c7526` (đồng bộ kết quả 19/20 ca, PR #10); nhánh `nhiem-vu-C-quan`.
+- Báo cáo cá nhân: `report/team/2A202603735_HoangDuongAnhQuan.md`.
