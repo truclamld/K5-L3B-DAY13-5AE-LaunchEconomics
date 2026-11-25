@@ -1,9 +1,5 @@
 # Báo cáo cá nhân — 2A202603787_LeDucTrucLam
 
-Copy file này và đổi tên theo quy tắc `MSSV_HoTen.md`. Giữ nguyên file mẫu.
-
-Ví dụ: `20241234_NguyenVanAn.md`.
-
 ## 1. Thông tin thành viên
 
 - Họ tên: Lê Đức Trúc Lâm
