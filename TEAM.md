@@ -132,11 +132,5 @@ Commit `db721d65aafa47245711595d6b2858f00e994c69` có thay đổi ở `src/lab13
 
 ### Bằng chứng
 
-- [Bảng đối chiếu và biện pháp khắc phục](report/team/bang_loi.md)
-- [Báo cáo cá nhân](report/team/2A202603735_HoangDuongAnhQuan.md)
-
-### Tự đánh giá
-
-- **Làm tốt** — Hoàn thành đối chiếu 20 ca, giải thích nhãn thống nhất cho ca 8 và đề xuất biện pháp khắc phục cho đủ 5 loại lỗi.
-- **Còn hạn chế** — Hai nhãn ở ca 13 và 15 bị chép nhầm khi gộp bảng. Đối chiếu lại với bộ nhãn gốc cho kết quả 19/20 ca trùng (95%).
-- **Cần cải thiện** — Kiểm tra từng dòng với hai bộ nhãn gốc trước khi tính tỉ lệ đồng thuận và ghi lý do ngay khi gắn nhãn ca dễ nhầm.
+- Commit `171a113` (bảng đối chiếu và biện pháp khắc phục trong `report/team/bang_loi.md`, PR #3), `a2c7526` (đồng bộ kết quả 19/20 ca, PR #10); nhánh `nhiem-vu-C-quan`.
+- Báo cáo cá nhân: `report/team/2A202603735_HoangDuongAnhQuan.md`.
