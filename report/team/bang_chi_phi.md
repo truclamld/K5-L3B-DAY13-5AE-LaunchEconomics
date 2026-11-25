@@ -65,18 +65,18 @@ Chi phí xem lại/làm lại dựa trên phút `*_simulated`; đây là các k�
 
 ## B2 · Đổi một cặp và xếp hạng
 
-- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: **6.543,12 đ/việc thành công**, tăng **46,31%** so với cơ sở 4.471,97 đ.
+- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: **6.543,12 đ [simulated]/việc thành công**, tăng **46,31%** so với cơ sở **4.471,97 đ [simulated]**.
 - Xếp hạng theo độ lớn tác động: **1. số ca làm lại** (−25,88%/+51,77%) · **2. tỉ lệ xem lại** (−20,35%/+40,70%) · **3. lương nhân viên** (+23,12%).
 
 ## B3 · Giới hạn chạy lại có thật sự rẻ hơn
 
 | Giới hạn | Tổng chi phí trợ lý | Số yêu cầu không thành công | Chi phí cả hệ thống | Chi phí mỗi việc thành công |
 | --- | ---: | ---: | ---: | ---: |
-| 1 lần | 3.621.781 đ | 319 | 7.449.781 đ | 4.111 đ |
-| 2 lần | 4.093.220 đ | 234 | **6.901.220 đ** | 4.237 đ |
-| 3 lần | 4.373.585 đ | 222 | 7.037.585 đ | 4.472 đ |
+| 1 lần | 3.621.781 đ [simulated] | 319 | 7.449.781 đ [simulated] | 4.111 đ [simulated] |
+| 2 lần | 4.093.220 đ [simulated] | 234 | **6.901.220 đ [simulated]** | 4.237 đ [simulated] |
+| 3 lần | 4.373.585 đ [simulated] | 222 | 7.037.585 đ [simulated] | 4.472 đ [simulated] |
 
-- Giới hạn **2 lần** rẻ nhất cho công ty (tổng 6,90 triệu đ); không trùng mức CPS thấp nhất là **1 lần** (4.111 đ), vốn chuyển thêm 85 yêu cầu sang nhân viên so với giới hạn 2 lần.
+- Giới hạn **2 lần** rẻ nhất cho công ty (tổng **6,90 triệu đ [simulated]**); không trùng mức CPS thấp nhất là **1 lần** (**4.111 đ [simulated]**), vốn chuyển thêm 85 yêu cầu sang nhân viên so với giới hạn 2 lần.
 
 ## B4 · Nếu phải xem lại tất cả
 

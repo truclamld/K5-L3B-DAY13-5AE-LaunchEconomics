@@ -23,12 +23,13 @@
 - `src/lab13.py`: mô hình chi phí, tính A4 và các kịch bản B1–B4.
 - `report/team/bang_chi_phi.md`: bảng chi phí cố định A4, độ nhạy B1–B2, giới hạn chạy lại B3 và kịch bản xem lại 100% B4.
 - Chi phí ở B4 dùng giả định thời gian xem lại/làm lại; các số dựa trên phút `*_simulated` được ghi nhãn simulated trong báo cáo.
+- Đã chạy `python lab13.py` sau khi cài dependencies: chương trình chạy hết, ba phép thử A1 đều ĐẠT; đầu ra A4/B được đối chiếu với bảng chi phí.
 
 ## 5. Công cụ AI đã dùng
 
 - Dùng ChatGPT/Codex để hỗ trợ viết và chỉnh sửa mã, tính các kịch bản, rà soát báo cáo và hoàn thiện nội dung theo cấu trúc lab.
-- Đã yêu cầu làm rõ các phần còn thiếu và kiểm tra cách xử lý lỗi thiếu `pandas`; cần tự chạy chương trình sau khi cài dependencies để xác nhận kết quả cuối cùng.
+- Đã yêu cầu làm rõ các phần còn thiếu và xử lý lỗi thiếu `pandas`; xác nhận chương trình chạy hết sau khi cài dependencies.
 
 ## 6. Tự đánh giá
 
-Đã chủ động theo dõi tiến độ phần A4/B, phát hiện nội dung còn thiếu và phối hợp dùng AI để hoàn thiện mã cùng báo cáo. Cần chạy chương trình với đủ thư viện, tự kiểm tra các con số và cập nhật commit trước khi nộp.
+Đã chủ động theo dõi tiến độ phần A4/B, phát hiện nội dung còn thiếu và phối hợp dùng AI để hoàn thiện mã cùng báo cáo. Đã chạy chương trình và kiểm tra A1 cùng các đầu ra A4/B trước khi cập nhật nhánh nộp.
