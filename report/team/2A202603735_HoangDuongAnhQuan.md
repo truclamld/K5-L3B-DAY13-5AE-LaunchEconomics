@@ -13,8 +13,8 @@ Phụ trách Nhiệm vụ C (CP3). Công việc gồm phân loại 20 ca lỗi l
 
 ## 3. Đóng góp cụ thể
 
-- Đối chiếu hai bộ nhãn theo từng ca. Kết quả ban đầu là 17/20 ca trùng, tương ứng 85%.
-- Ghi lý do cho ba ca có nhãn khác nhau. Ca 8 và ca 15 được xếp vào **Hệ thống** vì trợ lý viện dẫn sai điều khoản và tính sai mức hoàn. Ca 13 được xếp vào **Giới hạn hệ thống** vì hoàn phí bảo hiểm nằm ngoài phạm vi trợ lý.
+- Đối chiếu từng ca với bộ nhãn gốc của Hiếu ở commit `2969d36`. Sau khi sửa hai nhãn bị chép nhầm ở ca 13 và 15, kết quả đồng thuận ban đầu là 19/20 ca (95%).
+- Ghi lý do thống nhất nhãn cho ca 8. Ca này được xếp vào **Hệ thống** vì trợ lý viện dẫn điều khoản không tồn tại trong chính sách hiện hành.
 - Đề xuất biện pháp cho năm ca đại diện (1, 7, 3, 19 và 5). Mỗi ca có cách phát hiện đo được, hướng khắc phục và một vai trò phụ trách.
 
 ## 4. Bằng chứng
@@ -24,8 +24,8 @@ Phụ trách Nhiệm vụ C (CP3). Công việc gồm phân loại 20 ca lỗi l
 
 ## 5. Công cụ AI đã dùng
 
-Codex hỗ trợ đọc đề, gợi ý nhãn lần đầu, đối chiếu bảng và soạn báo cáo. Phần kiểm tra gồm so hai cột nhãn theo từng ca để đếm 17 dòng trùng, đọc lại mô tả và hướng dẫn cho các ca 8, 13, 15, rồi kiểm tra bảng khắc phục đủ năm loại lỗi. [Hướng dẫn Nhiệm vụ C](../../docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md#nhiệm-vụ-c--bảng-lỗi-và-cách-khắc-phục-30-phút)
+Codex hỗ trợ đọc đề, đối chiếu bảng và soạn báo cáo. Phần kiểm tra gồm đối chiếu hai cột nhãn với bộ nhãn gốc của Hiếu, đếm 19 dòng trùng, đọc lại mô tả và hướng dẫn cho ca 8, rồi kiểm tra bảng khắc phục đủ năm loại lỗi.
 
 ## 6. Tự đánh giá
 
-Qua ba ca lệch, em hiểu rõ hơn sự khác nhau giữa trợ lý làm sai chính sách và yêu cầu nằm ngoài phạm vi xử lý. Lần sau, em sẽ ghi một câu giải thích về nguyên nhân gốc ngay khi gắn nhãn cho các ca dễ nhầm để việc đối chiếu nhanh hơn.
+Qua ca 8, em hiểu rõ hơn cách phân biệt lỗi hệ thống do viện dẫn sai chính sách với lỗi ngữ cảnh do giả định của trợ lý không phù hợp với khách. Lần sau, em sẽ ghi lý do ngay khi gắn nhãn cho các ca dễ nhầm và so bảng với bộ nhãn gốc trước khi tính tỉ lệ đồng thuận.

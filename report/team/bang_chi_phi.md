@@ -49,34 +49,36 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 
 ## B1 · Đổi từng yếu tố
 
+Chi phí xem lại/làm lại dựa trên phút `*_simulated`; đây là các kịch bản **simulated**. CPS cơ sở: 4.471,97 đ trên 978 việc thành công.
+
 | Kịch bản | Cách tính | Chi phí mỗi việc thành công | Thay đổi (%) |
 | --- | --- | ---: | ---: |
-| Giá token gấp đôi | 52 đ và 260 đ cho 1.000 token; giá tool giữ nguyên | ... | ... |
-| Giá token giảm một nửa | 13 đ và 65 đ | ... | ... |
-| Tỉ lệ xem lại gấp đôi | Tiền xem lại × 2 | ... | ... |
-| Tỉ lệ xem lại giảm một nửa | Tiền xem lại ÷ 2 | ... | ... |
-| Số ca làm lại gấp đôi | Tiền làm lại × 2 | ... | ... |
-| Số ca làm lại giảm một nửa | Tiền làm lại ÷ 2 | ... | ... |
-| Lương nhân viên tăng 25% | 2.500 đ mỗi phút | ... | ... |
-| Chỉ cho chạy tối đa 2 lần | Bỏ lần chạy có attempt > 2; yêu cầu có so_lan_chay > 2 coi là chuyen_nhan_vien | ... | ... |
-| Chỉ cho chạy 1 lần | Như trên với giới hạn 1 | ... | ... |
+| Giá token gấp đôi | 52 đ và 260 đ cho 1.000 token; giá tool giữ nguyên | 4.723,08 đ | +5,62% |
+| Giá token giảm một nửa | 13 đ và 65 đ | 4.346,41 đ | −2,81% |
+| Tỉ lệ xem lại gấp đôi | Tiền xem lại × 2 | 6.292,01 đ | +40,70% |
+| Tỉ lệ xem lại giảm một nửa | Tiền xem lại ÷ 2 | 3.561,95 đ | −20,35% |
+| Số ca làm lại gấp đôi | Tiền làm lại × 2 | 6.786,90 đ | +51,77% |
+| Số ca làm lại giảm một nửa | Tiền làm lại ÷ 2 | 3.314,50 đ | −25,88% |
+| Lương nhân viên tăng 25% | 2.500 đ mỗi phút | 5.505,71 đ | +23,12% |
+| Chỉ cho chạy tối đa 2 lần | Bỏ lần chạy có attempt > 2; yêu cầu có so_lan_chay > 2 coi là chuyen_nhan_vien | 4.237,29 đ | −5,25% |
+| Chỉ cho chạy 1 lần | Như trên với giới hạn 1 | 4.110,99 đ | −8,07% |
 
 ## B2 · Đổi một cặp và xếp hạng
 
-- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: ...
-- Xếp hạng ba yếu tố ảnh hưởng mạnh nhất: 1. ... · 2. ... · 3. ...
+- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: **6.543,12 đ [simulated]/việc thành công**, tăng **46,31%** so với cơ sở **4.471,97 đ [simulated]**.
+- Xếp hạng theo độ lớn tác động: **1. số ca làm lại** (−25,88%/+51,77%) · **2. tỉ lệ xem lại** (−20,35%/+40,70%) · **3. lương nhân viên** (+23,12%).
 
 ## B3 · Giới hạn chạy lại có thật sự rẻ hơn
 
 | Giới hạn | Tổng chi phí trợ lý | Số yêu cầu không thành công | Chi phí cả hệ thống | Chi phí mỗi việc thành công |
 | --- | ---: | ---: | ---: | ---: |
-| 1 lần | ... | ... | ... | ... |
-| 2 lần | ... | ... | ... | ... |
-| 3 lần | ... | ... | ... | ... |
+| 1 lần | 3.621.781 đ [simulated] | 319 | 7.449.781 đ [simulated] | 4.111 đ [simulated] |
+| 2 lần | 4.093.220 đ [simulated] | 234 | **6.901.220 đ [simulated]** | 4.237 đ [simulated] |
+| 3 lần | 4.373.585 đ [simulated] | 222 | 7.037.585 đ [simulated] | 4.472 đ [simulated] |
 
-- Giới hạn nào rẻ nhất cho công ty? Có trùng với giới hạn cho chi phí mỗi việc thành công thấp nhất không? ...
+- Giới hạn **2 lần** rẻ nhất cho công ty (tổng **6,90 triệu đ [simulated]**); không trùng mức CPS thấp nhất là **1 lần** (**4.111 đ [simulated]**), vốn chuyển thêm 85 yêu cầu sang nhân viên so với giới hạn 2 lần.
 
 ## B4 · Nếu phải xem lại tất cả
 
-- Chi phí mỗi việc thành công khi xem lại 100% (`noi_dia` + `hang_nang`), so với 12.000 đ: ...
-- Kết quả này nói gì về thứ pilot cần học được? ...
+- Theo giả định simulated trong hướng dẫn (5 phút xem lại cho 948 yêu cầu có run `ok`, 9 phút làm lại cho 48 ca), tổng là 10.568.513 đ/900 việc thành công = **11.743 đ (0,98× 12.000 đ)**. Dùng 15,3 phút làm lại quan sát từ cột simulated, CPS thành **12.414 đ (1,03×)**.
+- Pilot cần đo thời gian xem lại thực tế và tỉ lệ xem lại tối thiểu an toàn: xem lại 100% gần như mất hết lợi thế; với 15,3 phút làm lại, chi phí vượt nhân viên tự làm.
